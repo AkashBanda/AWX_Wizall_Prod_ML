@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+    - name: Wizall-ML Prod Deployment Service Setting up
+      template:
+         src: "/root/Ansible/Wizall_Prod/ML/Wizall_ML_Var.j2"
+         dest: "/root/Ansible/Wizall_Prod/ML/var.yml"
