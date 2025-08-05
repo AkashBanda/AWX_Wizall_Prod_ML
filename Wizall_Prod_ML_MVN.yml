@@ -7,8 +7,8 @@
 #          chdir: "/root/Ansible/Wizall_Prod/ML/MFS-WizallMW/"
 #       register: output
 
-     - debug:
-          msg: "{{ output }}"
+#     - debug:
+#          msg: "{{ output }}"
        
      - name: "MVN running on MobifinMainModule"
        command:
