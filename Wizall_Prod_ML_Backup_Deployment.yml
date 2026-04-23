@@ -135,16 +135,16 @@
     - name: Deploying {{ service }} dependencies on {{ service2 }} Service
      copy:
          src: "/root/Ansible/Wizall_Prod/ML/MFS-WizallMW/{{ service }}/target/dependency-jars/"
-         dest: "/home/mfssupport.lead/Wizall/{{ service2 }}/dependencies/"
+#         dest: "/home/mfssupport.lead/Wizall/{{ service2 }}/dependencies/"
          dest: "/opt/Application/ML_Wizall/MobifinApps/{{ service2 }}/dependencies/"
          owner: "mobifin"
          group: "mobifin"
          mode: "0755" 
 
-    - name: Restarting {{ service }} service
-      service:
-         name: "{{ service3 }}"
-         state: "restarted"   
+#    - name: Restarting {{ service }} service
+#      service:
+#         name: "{{ service3 }}"
+#         state: "restarted"   
 
 - hosts: ML-WEB
   tasks:
