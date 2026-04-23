@@ -133,7 +133,7 @@
       when: service == "InternalTrnService"
 
     - name: Deploying {{ service }} dependencies on {{ service2 }} Service
-     copy:
+      copy:
          src: "/root/Ansible/Wizall_Prod/ML/MFS-WizallMW/{{ service }}/target/dependency-jars/"
 #         dest: "/home/mfssupport.lead/Wizall/{{ service2 }}/dependencies/"
          dest: "/opt/Application/ML_Wizall/MobifinApps/{{ service2 }}/dependencies/"
